@@ -1,0 +1,115 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+body{
+    padding: 0 100px;
+}
+
+header {
+    padding: 5px 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900;
+    top: 1px;
+}
+
+a.logo {
+    font-weight: 900;
+    font-size: 30px;
+    color: black;
+}
+
+.nav {
+    list-style: none;
+    position: sticky;
+}
+.nav a{
+    color: black;
+}
+
+.nav li {
+    display:  inline-block;
+    margin: 14px;
+    position: relative;
+}
+
+.nav li a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    background-color: #000000;
+    transition: all .4s ease-in-out;
+    width: 0;
+    height: 2px;
+}
+
+.nav li a:hover::before {
+    width: 100%;
+}
+
+.search button {
+    outline: none;
+    background-color: none;
+    cursor: pointer;
+    border: none;
+    margin: 0 10px;
+    font-size: 9px;
+}
+.buscar i{
+    font-size: 13px;
+   
+}
+   #menuVert{
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .6s;
+   }
+   .Vertical{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: #222;
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+    transition: all .5s;
+   }
+   .Vertical a{
+    padding: 8px 8px 8px 64px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #999;
+    display: block;
+   }
+   .Vertical a:hover{
+     color: white;
+   }
+   .Vertical .closebtn{
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 32px;
+   }
+   
+@media (max-width:960px) {
+    body {
+    
+        padding: 0 30px;
+    }
+    a.logo {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .nav {
+        display: none;
+    } 
